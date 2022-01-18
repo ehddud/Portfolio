@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1786e!important;
+    font-family: 'DOSGothic'!important;
+    /* font-family: 'Noto Sans KR', sans-serif!important; */
+}
+
+#countdown {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+canvas {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 1em;
+}
+
+.cen {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+#beforegame {
+    text-align: center;
+}
+
+.title{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+.subtitle{
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #333;
+}
+
+.cont {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    color: #333;
+    letter-spacing: -0.08em;
+}
+
+.btns {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f9bd45;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: none;
+    box-shadow: 1px 5px 3px #d79b23;
+    transition: all 0.2s;
+}
+
+.active-btn {
+    background-color: #d79b23!important;
+    box-shadow: 1px 5px 3px #f9bd45!important;
+    color: #eee!important;
+}
+
+#stage {
+    width: 750px;
+    height: 750px;
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px rgb(0,0,0,0.3);
+}
+
+#score {
+    position: absolute;
+    display: none;
+    top: 30%;
+    left: 5%;
+    color: white;
+    font-size: 1.5em;
+}
+
+.block{
+    border-radius: 10px;
+    float: left;
+}
+
+#btnbox{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* margin-top: 100px; */
+    /* text-align: center; */
+    display: none;
+    transition: all 0.4s ease-in 0.2s;
+}
+
+#afterclear {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    color-interpolation-filters: #333;
+}
+
+
+@media all and (max-width:1300px){
+    #stage {
+        width: 550px;
+        height: 550px;
+    }
+}
+@media all and (max-width:970px){
+    #stage {
+        left: 65%;
+    }
+}
+
+@media all and (max-width:800px){
+    #stage {
+        width: 450px;
+        height: 450px;
+    }
+    #score{
+        font-size: 1.2em;
+    }
+}
+@media all and (max-width:660px){
+    #stage {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media all and (max-width:520px){
+    #stage {
+        left: 50%;
+        top: 60%;
+    }
+    #countdown{
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+    }
+    #score {
+        top: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    canvas {
+        width: 80px;
+        height: 80px;
+        margin-top: 0;
+    }
+    .title{
+        font-size: 2.3em;
+        font-weight: bold;
+        margin-top: 2.5em;
+        margin-bottom: 1.5em;
+        color: #333;
+    }
+    .subtitle{
+        font-size: 1.5em;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        color: #333;
+    }
+    
+    .cont {
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: 2.5em;
+        margin-bottom: 3.5em;
+        color: #333;
+    }
+}
+@media all and (max-width:430px){
+    #countdown{
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+    }
+    #score {
+        top: 21%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #stage {
+        left: 50%;
+        top: 50%;
+    }
+    #afterclear {
+        font-size: 1.3em;
+    }
+}
+@media all and (max-width:410px){
+    #stage {
+        width: 300px;
+        height: 300px;
+        top: 50%;
+    }
+}
+@media all and (max-width:360px){
+    #stage {
+        width: 250px;
+        height: 250px;
+    }
+}
+

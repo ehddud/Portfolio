@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Color Test</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/common.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3b79190b24.js" crossorigin="anonymous"></script>
+        <script src="script/jquery.countdown360.js"></script>
+    </head>
+    <body>
+        
+        <!-- <div id="countdown"></div> -->
+        <div class="cen" id="beforegame">
+            
+            <p class="title">색감 테스트!</p>
+            
+            <p class="subtitle">Color test</p>
+            
+            <p class="cont">미묘하게 다른 색 하나를 찾아보세요.</p>
+            
+            <button id="startbtn" class="btns">테스트 시작</button>
+            
+        </div>
+        
+        <div class="cen">
+            <div id="countdown"></div>
+
+            <div id="score"></div>
+            
+            <div id="stage"></div>
+            
+            <div id="afterclear">
+                <i class="far fa-thumbs-up"></i>
+                <p>참 잘했어요~!</p>
+            </div>
+
+            <div id="btnbox">
+                <button id="replay" class="btns animate__animated animate__flipInX" type="button">Replay!</button>
+            </div>
+
+
+        </div>
+        
+        
+        
+        <script src="script/script.js" ></script>
+    </body>
+    </html>
